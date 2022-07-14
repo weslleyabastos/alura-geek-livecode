@@ -4,6 +4,8 @@
 Para iniciar um novo ambiente:
 
 npm install
+
+
 npm run start
 
 ### JSON Server
@@ -19,4 +21,6 @@ json-server --watch db.json
 ### Login
 
 email: admin@geek.com
+
+
 senha: 1234
