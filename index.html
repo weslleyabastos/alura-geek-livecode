@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" defer src="./src/js/controller.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Alura Geek</title>
+  </head>
+  <body>
+    <nav class="navbar__container container">
+      <div class="navbar__content">
+        <a href="#home">
+          <div class="navbar__content-logo">
+            <img src="./src/img/logo.png" alt="Logo" />
+            <p class="navbar__content-logo-text">Alura<span>Geek</span></p>
+          </div>
+        </a>
+      </div>
+      <form class="navbar__form">
+        <div class="navbar__content-search">
+          <input
+            type="text"
+            id="pesquisar"
+            placeholder="O que deseja encontrar?"
+            class="navbar__content-search-input"
+          />
+          <ion-icon
+            name="search-outline"
+            class="navbar__content-search-icon"
+          ></ion-icon>
+        </div>
+      </form>
+      <a href="#login" class="navbar__btn-login">Login</a>
+    </nav>
+    <main id="app"></main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer-logo">
+          <img src="./src/img/logo.png" alt="Logo" />
+          <p class="footer-logo-text">Alura<span>Geek</span></p>
+        </div>
+        <nav class="footer__navbar">
+          <ul class="footer__link">
+            <li class="footer__link-item">
+              <a href="#home">Quem somos nós</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="#home">Política de privacidade</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="#home">Programa fidelidade</a>
+            </li>
+            <li class="footer__link-item"><a href="#home">Nossas lojas</a></li>
+            <li class="footer__link-item">
+              <a href="#home">Quero ser franqueado</a>
+            </li>
+            <li class="footer__link-item"><a href="#home">Anuncie aqui</a></li>
+          </ul>
+        </nav>
+        <form class="footer__form">
+          <h2 class="footer__form-title">Fale conosco</h2>
+          <div class="footer__form-item">
+            <label for="nome" class="footer__form-label label-input"
+              >Nome</label
+            >
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="footer__form-input input-item"
+              maxlength="40"
+              minlength="1"
+            />
+          </div>
+          <div class="footer__form-message">
+            <label for="mensagem" class="footer__form-label label-textarea"
+              >Escreva sua mensagem</label
+            >
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              class="footer__form-input textarea-item"
+              minlength="1"
+              maxlength="120"
+            ></textarea>
+          </div>
+          <button class="footer__form-btn btn">Enviar mensagem</button>
+          <div class="popup-success popup-success--hidden">
+            <img src="https://img.icons8.com/office/40/000000/ok--v1.png" />
+            <p>Mensagem enviada!</p>
+          </div>
+          <div class="overlay popup-success--hidden"></div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
